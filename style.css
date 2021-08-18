@@ -7,86 +7,6 @@ body {
   padding-top: 56px;
 }
 
-/* Navigation bar  */
-
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px; /* Height of navbar */
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #81abd6;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-  }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    transform: translateX(-100%);
-  }
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(2, 78, 241, 0.75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: #ffffff;
-}
-
-.nav-underline .nav-link:hover {
-  color: #007bff;
-}
-
-.nav-underline .active {
-  font-weight: 500;
-  color: #94d8d5;
-}
-
-.bg-purple {
-  background-color: #6f42c1;
-}
-
-/* Front Cover  */
-
-#cover{
-     background-image: url('executium-uRKETZRn-K4-unsplash.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-#cover-text {
-  font-family: 'Signika', sans-serif;
-    background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold 700;
-  border: 2px solid #f1f1f193;
-}
-
-
 /* Timeline */
 
 /* The actual timeline (the vertical ruler) */
@@ -159,6 +79,7 @@ body {
 
 /* The actual content */
 .content {
+  border-radius: 5px;
   padding: 20px 30px;
   background-color: black;
   background-size: cover; 
@@ -167,6 +88,7 @@ body {
 }
 
 .content p {
+  font-family: 'Rubik', sans-serif;
     font-weight: bold;
     color: white;
     opacity:0;
@@ -234,3 +156,125 @@ img{
 #gallery-modal .modal-img{
 	width: 100%;
 }
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  transform: translateY(-15%);
+  width: 100%;
+  height: 100vh;
+  background: url(4853433.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hero h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #313131;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+
+.hero .btn-register {
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 15px 40px;
+  border-radius: 2px;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background: #881aee;
+  box-shadow: 0px 5px 30px rgba(48, 48, 48, 0.4);
+}
+
+.hero .btn-register span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.hero .btn-register i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hero .btn-register:hover i {
+  transform: translateX(5px);
+}
+
+.hero .hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+  .hero .hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content {
+  background-color: inherit;
+  padding: 40px;
+}
+
+.about h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #7d1aee;
+}
+
+
+.about p {
+  color: #000000;
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+  transition: 0s;
+  opacity: 1;
+  font-size: 20px;
+}
+
+
