@@ -78,10 +78,13 @@ body {
 
 
 /* The actual content */
+.timeline .content {
+  border-style: solid; border-width: 1px;
+}
 .content {
   border-radius: 5px;
   padding: 20px 30px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   background-size: cover; 
     background-repeat: no-repeat;
   position: relative;
@@ -90,13 +93,13 @@ body {
 .content p {
   font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     opacity:0;
     transition: 0.5s;
 }
 
 .content h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   
 }
 .content p:hover {
@@ -104,7 +107,7 @@ body {
 }
 
 .content h3 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: normal;
 }
 
@@ -270,6 +273,7 @@ img{
   line-height: 24px;
   transition: 0s;
   opacity: 1;
+  font-weight: normal;
   font-size: 20px;
 }
 
